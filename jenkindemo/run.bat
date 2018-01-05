@@ -1,0 +1,1 @@
+java -cp F:\chhotu\jenkindemo\jar\*;F:\chhotu\jenkindemo\bin org.testng.TestNG  F:\chhotu\jenkindemo\testng.xml

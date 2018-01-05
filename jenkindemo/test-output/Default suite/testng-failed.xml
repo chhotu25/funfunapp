@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="jenkin_ci_config.DemoCi">
+        <methods>
+          <include name="login"/>
+          <include name="afterTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- jenkin_ci_config.DemoCi -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
