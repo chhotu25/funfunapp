@@ -1,78 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="34216" started-at="2018-01-03T10:42:01Z" finished-at="2018-01-03T10:42:35Z">
+  <suite name="Default suite" duration-ms="51" started-at="2018-01-05T12:42:11Z" finished-at="2018-01-05T12:42:11Z">
     <groups>
     </groups>
-    <test name="EdgeTest" duration-ms="20808" started-at="2018-01-03T10:42:01Z" finished-at="2018-01-03T10:42:22Z">
+    <test name="Default test" duration-ms="51" started-at="2018-01-05T12:42:11Z" finished-at="2018-01-05T12:42:11Z">
       <class name="jenkin_ci_config.DemoCi">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:jenkin_ci_config.DemoCi@2f7c7260]" name="setup" is-config="true" duration-ms="2708" started-at="2018-01-03T16:12:01Z" finished-at="2018-01-03T16:12:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="FAIL" signature="setup(java.lang.String)[pri:0, instance:jenkin_ci_config.DemoCi@7a9273a8]" name="setup" is-config="true" duration-ms="0" started-at="2018-01-05T18:12:11Z" finished-at="2018-01-05T18:12:11Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or definedin C:\Users\AL Moin Webtech\AppData\Local\Temp\testng-eclipse-1749779816\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or definedin C:\Users\AL Moin Webtech\AppData\Local\Temp\testng-eclipse-1749779816\testng-customsuite.xmlat org.testng.internal.Parameters.createParams(Parameters.java:290)at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)at org.testng.internal.Parameters.createParameters(Parameters.java:620)at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)at org.testng.TestRunner.beforeRun(TestRunner.java:529)at org.testng.TestRunner.run(TestRunner.java:497)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="login()[pri:0, instance:jenkin_ci_config.DemoCi@2f7c7260]" name="login" duration-ms="12373" started-at="2018-01-03T16:12:04Z" finished-at="2018-01-03T16:12:16Z">
+        <test-method status="SKIP" signature="login()[pri:0, instance:jenkin_ci_config.DemoCi@7a9273a8]" name="login" duration-ms="0" started-at="2018-01-05T18:12:11Z" finished-at="2018-01-05T18:12:11Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or definedin C:\Users\AL Moin Webtech\AppData\Local\Temp\testng-eclipse-1749779816\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or definedin C:\Users\AL Moin Webtech\AppData\Local\Temp\testng-eclipse-1749779816\testng-customsuite.xmlat org.testng.internal.Parameters.createParams(Parameters.java:290)at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)at org.testng.internal.Parameters.createParameters(Parameters.java:620)at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)at org.testng.TestRunner.beforeRun(TestRunner.java:529)at org.testng.TestRunner.run(TestRunner.java:497)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:jenkin_ci_config.DemoCi@2f7c7260]" name="afterTest" is-config="true" duration-ms="5692" started-at="2018-01-03T16:12:16Z" finished-at="2018-01-03T16:12:22Z">
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:jenkin_ci_config.DemoCi@7a9273a8]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-01-05T18:12:11Z" finished-at="2018-01-05T18:12:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- jenkin_ci_config.DemoCi -->
-    </test> <!-- EdgeTest -->
-    <test name="ChromeTest" duration-ms="24336" started-at="2018-01-03T10:42:01Z" finished-at="2018-01-03T10:42:26Z">
-      <class name="jenkin_ci_config.DemoCi">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:jenkin_ci_config.DemoCi@d7b1517]" name="setup" is-config="true" duration-ms="5796" started-at="2018-01-03T16:12:01Z" finished-at="2018-01-03T16:12:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="login()[pri:0, instance:jenkin_ci_config.DemoCi@d7b1517]" name="login" duration-ms="17428" started-at="2018-01-03T16:12:07Z" finished-at="2018-01-03T16:12:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:jenkin_ci_config.DemoCi@d7b1517]" name="afterTest" is-config="true" duration-ms="1096" started-at="2018-01-03T16:12:24Z" finished-at="2018-01-03T16:12:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- jenkin_ci_config.DemoCi -->
-    </test> <!-- ChromeTest -->
-    <test name="FirefoxTest" duration-ms="34216" started-at="2018-01-03T10:42:01Z" finished-at="2018-01-03T10:42:35Z">
-      <class name="jenkin_ci_config.DemoCi">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:jenkin_ci_config.DemoCi@3cb5cdba]" name="setup" is-config="true" duration-ms="14508" started-at="2018-01-03T16:12:01Z" finished-at="2018-01-03T16:12:16Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="login()[pri:0, instance:jenkin_ci_config.DemoCi@3cb5cdba]" name="login" duration-ms="19240" started-at="2018-01-03T16:12:16Z" finished-at="2018-01-03T16:12:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:jenkin_ci_config.DemoCi@3cb5cdba]" name="afterTest" is-config="true" duration-ms="450" started-at="2018-01-03T16:12:35Z" finished-at="2018-01-03T16:12:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- jenkin_ci_config.DemoCi -->
-    </test> <!-- FirefoxTest -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

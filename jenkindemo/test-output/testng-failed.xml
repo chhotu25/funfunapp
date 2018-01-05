@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <test name="EdgeTest(failed)" parallel="tests">
-    <parameter name="browser" value="edge"/>
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
       <class name="jenkin_ci_config.DemoCi">
         <methods>
@@ -12,5 +11,5 @@
         </methods>
       </class> <!-- jenkin_ci_config.DemoCi -->
     </classes>
-  </test> <!-- EdgeTest(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
